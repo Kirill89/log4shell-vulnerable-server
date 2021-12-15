@@ -1,5 +1,7 @@
 # One more log4j2 (Log4Shell) vulnerable server
 
+The exploit: https://github.com/Kirill89/log4shell-vulnerable-server-exploit
+
 ## Build
 
 ```shell
