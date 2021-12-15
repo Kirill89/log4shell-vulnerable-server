@@ -12,6 +12,6 @@ docker build -t log4shell-vulnerable-server .
 docker run -it --rm -p 8000:8000 --name log4shell-vulnerable-server log4shell-vulnerable-server
 ```
 
-## remediation cheat sheet
+## Log4Shell mitigation cheat sheet
 
 https://snyk.io/blog/log4shell-remediation-cheat-sheet/
