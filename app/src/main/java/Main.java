@@ -19,11 +19,12 @@ public class Main {
         Configurator.setRootLevel(Level.ALL);
     }
 
-    public static void main(String[] args) throws InterruptedException, IOException {
+    public static void main(String[] args) throws IOException {
         HttpServer server = HttpServer.create(new InetSocketAddress(8000), 0);
 
         server.createContext("/", exchange -> {
-            logger.debug("User agent is {}", exchange.getRequestHeaders().get("User-Agent").get(0));
+            logger.debug("User agent is {}",
+                    exchange.getRequestHeaders().get("User-Agent").get(0));
 
             byte[] html = Files.readAllBytes(Paths.get("index.html"));
 
